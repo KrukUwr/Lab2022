@@ -1,0 +1,37 @@
+---
+title: "Lab1_Zadania"
+format: html
+editor: visual
+---
+
+## Zadania Lab1
+
+Waszym zadaniem będzie odpowiedź na poniższe pytania:
+
+1.  Ile jest spraw w analizowanych zbiorach?
+2.  Jakie jest ich łączne zadłużenie?
+3.  Ile jest spraw kobiet i mężczyzn? Czy są sprawy bez przypisanej płci klienta?
+4.  Jaka jest suma wpłat wszystkich spraw w horyzoncie 12 miesięcy od ich zakupu?
+5.  A jaka w 6 miesięcy?
+6.  Ile wpłaciła sprawa `CaseId=11478344` w pierwszym miesiącu obsługi, ile do 5 włącznie, a ile w całym dostępnym horyzoncie?
+7.  Podzielcie zbiór spraw na portfele w sposób losowy, ale tak aby spełnić warunki z tabeli:
+
+| Nazwa portfela  | Liczba spraw | Data zakupu portfela |
+|-----------------|--------------|----------------------|
+| PKO1            | 12345        | 2019-02-09           |
+| PKO2            | 25722        | 2020-03-22           |
+| mBank1          | 9784         | 2020-07-23           |
+| Provident1      | 3456         | 2020-11-03           |
+| Provident2      | 2003         | 2021-10-02           |
+| Wonga6          | 5678         | 2021-09-15           |
+| Santander3      | 25345        | 2018-08-12           |
+| Pekao2          | 17392        | 2019-01-18           |
+| BocianPozyczki4 | 6734         | 2020-04-21           |
+| HapiPozyczki22  | 4770         | 2021-06-27           |
+
+Podpowiedź: Należy do zbioru danych dodać dwie kolumny: `Portfolio` oraz `PurchaseDate`
+
+8.  Jakie jest średnie zadłużenie w portfelu?
+9.  Jaka jest suma wpłat w 12 miesięcy per portfel?
+10. Jaka jest skuteczność w 12 miesięcy per portfel?
+11. Ile spraw dokonało wpłaty w 12 miesięcy w każdym portfelu? Jaki stanowią udział wszystkich spraw pod względem liczby spraw oraz zadłużenia?
