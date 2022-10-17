@@ -29,3 +29,5 @@
 - [Lista tematów](ListaZadan/tematyProjektów.md)
 
 ## Laboratorium 1
+
+- [Lista zadań](ListaZadan/Lab1_Zadania.qmd)
