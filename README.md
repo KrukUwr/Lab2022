@@ -31,3 +31,8 @@
 ## Laboratorium 1
 
 - [Lista zadań](ListaZadan/Lab1_Zadania.qmd)
+
+
+## Laboratorium 2
+
+- [Lista zadań](ListaZadan/Lab2_Zadania.qmd)
