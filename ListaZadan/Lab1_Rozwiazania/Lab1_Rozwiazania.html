@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lab1_Rozwiazania</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="Lab1_Rozwiazania_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Lab1_Rozwiazania_files/libs/quarto-html/quarto.js"></script>
+<script src="Lab1_Rozwiazania_files/libs/quarto-html/popper.min.js"></script>
+<script src="Lab1_Rozwiazania_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Lab1_Rozwiazania_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Lab1_Rozwiazania_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Lab1_Rozwiazania_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Lab1_Rozwiazania_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Lab1_Rozwiazania_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Lab1_Rozwiazania_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab1_Rozwiazania</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="zadania-lab1" class="level2">
+<h2 class="anchored" data-anchor-id="zadania-lab1">Zadania Lab1</h2>
+<p>Waszym zadaniem będzie odpowiedź na poniższe pytania:</p>
+<ol type="1">
+<li>Ile jest spraw w analizowanych zbiorach?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"../KrukUWr2022.RData"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>cases[,.N]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 113229</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>events[,.N]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1358748</code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Jakie jest ich łączne zadłużenie?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>cases[,<span class="fu">sum</span>(TOA)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1124178517</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Ile jest spraw kobiet i mężczyzn? Czy są sprawy bez przypisanej płci klienta?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cases[,.N,by<span class="ot">=</span>.(Gender)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Gender     N
+1: FEMALE 43673
+2:   MALE 68492
+3:   &lt;NA&gt;  1064</code></pre>
+</div>
+</div>
+<ol start="4" type="1">
+<li>Jaka jest suma wpłat wszystkich spraw w horyzoncie 12 miesięcy od ich zakupu?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>events[,<span class="fu">sum</span>(PaymentAmount, <span class="at">na.rm=</span><span class="cn">TRUE</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 55770633</code></pre>
+</div>
+</div>
+<ol start="5" type="1">
+<li>A jaka w 6 miesięcy?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>events[Month<span class="sc">&lt;=</span><span class="dv">6</span>,<span class="fu">sum</span>(PaymentAmount, <span class="at">na.rm=</span><span class="cn">TRUE</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 28256507</code></pre>
+</div>
+</div>
+<ol start="6" type="1">
+<li>Ile wpłaciła sprawa <code>CaseId=11478344</code> w pierwszym miesiącu obsługi, ile do 5 włącznie, a ile w całym dostępnym horyzoncie?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>events[CaseId <span class="sc">==</span> <span class="dv">11478344</span> <span class="sc">&amp;</span> Month <span class="sc">==</span> <span class="dv">1</span>, PaymentAmount]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># odp. 0.0</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>events[CaseId <span class="sc">==</span> <span class="dv">11478344</span> <span class="sc">&amp;</span> Month <span class="sc">&lt;=</span> <span class="dv">6</span>, <span class="fu">sum</span>(PaymentAmount, <span class="at">na.rm=</span><span class="cn">TRUE</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 425.2992</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>events[CaseId <span class="sc">==</span> <span class="dv">11478344</span>, <span class="fu">sum</span>(PaymentAmount, <span class="at">na.rm=</span><span class="cn">TRUE</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1303.999</code></pre>
+</div>
+</div>
+<ol start="7" type="1">
+<li>Podzielcie zbiór spraw na portfele w sposób losowy, ale tak aby spełnić warunki z tabeli:</li>
+</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Nazwa portfela</th>
+<th>Liczba spraw</th>
+<th>Data zakupu portfela</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PKO1</td>
+<td>12345</td>
+<td>2019-02-09</td>
+</tr>
+<tr class="even">
+<td>PKO2</td>
+<td>25722</td>
+<td>2020-03-22</td>
+</tr>
+<tr class="odd">
+<td>mBank1</td>
+<td>9784</td>
+<td>2020-07-23</td>
+</tr>
+<tr class="even">
+<td>Provident1</td>
+<td>3456</td>
+<td>2020-11-03</td>
+</tr>
+<tr class="odd">
+<td>Provident2</td>
+<td>2003</td>
+<td>2021-10-02</td>
+</tr>
+<tr class="even">
+<td>Wonga6</td>
+<td>5678</td>
+<td>2021-09-15</td>
+</tr>
+<tr class="odd">
+<td>Santander3</td>
+<td>25345</td>
+<td>2018-08-12</td>
+</tr>
+<tr class="even">
+<td>Pekao2</td>
+<td>17392</td>
+<td>2019-01-18</td>
+</tr>
+<tr class="odd">
+<td>BocianPozyczki4</td>
+<td>6734</td>
+<td>2020-04-21</td>
+</tr>
+<tr class="even">
+<td>HapiPozyczki22</td>
+<td>4770</td>
+<td>2021-06-27</td>
+</tr>
+</tbody>
+</table>
+<p>Podpowiedź: Należy do zbioru danych dodać dwie kolumny: <code>Portfolio</code> oraz <code>PurchaseDate</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># rozwiązanie z użyciem pętli for</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>portfolios <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">PortfolioName =</span> <span class="fu">c</span>(<span class="st">"PKO1"</span>, <span class="st">"PKO2"</span>, <span class="st">"mBank1"</span>, <span class="st">"Provident1"</span>, <span class="st">"Provident2"</span>, <span class="st">"Wonga6"</span>, <span class="st">"Santander3"</span>, <span class="st">"Pekao2"</span>, <span class="st">"BocianPozyczki4"</span>, <span class="st">"HapiPozyczki22"</span>),</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">NoOfCases =</span> <span class="fu">c</span>(<span class="dv">12345</span>, <span class="dv">25722</span>, <span class="dv">9784</span>, <span class="dv">3456</span>, <span class="dv">2003</span>, <span class="dv">5678</span>, <span class="dv">25345</span>, <span class="dv">17392</span>, <span class="dv">6734</span>, <span class="dv">4770</span>),</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">PurchaseDate =</span> <span class="fu">as.Date</span>(<span class="fu">c</span>(<span class="st">"2019-02-09"</span>, <span class="st">"2020-03-22"</span>, <span class="st">"2020-07-23"</span>, <span class="st">"2020-11-03"</span>, <span class="st">"2021-10-02"</span>, <span class="st">"2021-09-15"</span>, <span class="st">"2018-08-12"</span>, <span class="st">"2019-01-18"</span>, <span class="st">"2020-04-21"</span>, <span class="st">"2021-06-27"</span>))</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>new_columns <span class="ot">&lt;-</span> <span class="fu">data.table</span>()</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>portfolios[,.N]) {</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>  new_columns <span class="ot">&lt;-</span> <span class="fu">rbindlist</span>(<span class="fu">list</span>(</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>    new_columns,</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">data.table</span>(</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">PortfolioName =</span> <span class="fu">rep</span>(portfolios[i, PortfolioName], <span class="at">times =</span> portfolios[i, NoOfCases]),</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">PurchaseDate =</span> <span class="fu">rep</span>(portfolios[i, PurchaseDate], <span class="at">times =</span> portfolios[i, NoOfCases])</span>
+<span id="cb19-18"><a href="#cb19-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a>new_columns <span class="ot">&lt;-</span> new_columns[<span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span>new_columns[,.N])]</span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a>cases <span class="ot">&lt;-</span> <span class="fu">cbind</span>(cases, new_columns)</span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(cases[,.N, <span class="at">by=</span>.(PortfolioName, PurchaseDate)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># rozwiązanie z wykorzystaniem JOINów w data.table</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>portfolios <span class="ot">&lt;-</span> <span class="fu">data.table</span>(</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">PortfolioName =</span> <span class="fu">c</span>(<span class="st">"PKO1"</span>, <span class="st">"PKO2"</span>, <span class="st">"mBank1"</span>, <span class="st">"Provident1"</span>, <span class="st">"Provident2"</span>, <span class="st">"Wonga6"</span>, <span class="st">"Santander3"</span>, <span class="st">"Pekao2"</span>, <span class="st">"BocianPozyczki4"</span>, <span class="st">"HapiPozyczki22"</span>),</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">NoOfCases =</span> <span class="fu">c</span>(<span class="dv">12345</span>, <span class="dv">25722</span>, <span class="dv">9784</span>, <span class="dv">3456</span>, <span class="dv">2003</span>, <span class="dv">5678</span>, <span class="dv">25345</span>, <span class="dv">17392</span>, <span class="dv">6734</span>, <span class="dv">4770</span>),</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">PurchaseDate =</span> <span class="fu">as.Date</span>(<span class="fu">c</span>(<span class="st">"2019-02-09"</span>, <span class="st">"2020-03-22"</span>, <span class="st">"2020-07-23"</span>, <span class="st">"2020-11-03"</span>, <span class="st">"2021-10-02"</span>, <span class="st">"2021-09-15"</span>, <span class="st">"2018-08-12"</span>, <span class="st">"2019-01-18"</span>, <span class="st">"2020-04-21"</span>, <span class="st">"2021-06-27"</span>))</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>cases[,</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  PortfolioName<span class="sc">:</span><span class="er">=</span><span class="fu">sample</span>(<span class="fu">c</span>(</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"PKO1"</span>, <span class="at">times=</span><span class="dv">12345</span>),</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"PKO2"</span>, <span class="at">times=</span><span class="dv">25722</span>),</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"mBank1"</span>, <span class="at">times=</span><span class="dv">9784</span>),</span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"Provident1"</span>, <span class="at">times=</span><span class="dv">3456</span>),</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"Provident2"</span>, <span class="at">times=</span><span class="dv">2003</span>),</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"Wonga6"</span>, <span class="at">times=</span><span class="dv">5678</span>),</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"Santander3"</span>, <span class="at">times=</span><span class="dv">25345</span>),</span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"Pekao2"</span>, <span class="at">times=</span><span class="dv">17392</span>),</span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"BocianPozyczki4"</span>, <span class="at">times=</span><span class="dv">6734</span>),</span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rep</span>(<span class="st">"HapiPozyczki22"</span>, <span class="at">times=</span><span class="dv">4770</span>)</span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>  ))]</span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>cases <span class="ot">&lt;-</span> cases[portfolios[,.(PortfolioName, PurchaseDate)], on<span class="ot">=</span><span class="fu">c</span>(<span class="st">"PortfolioName"</span> <span class="ot">=</span> <span class="st">"PortfolioName"</span>)]</span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(cases[,.N, <span class="at">by=</span>.(PortfolioName, PurchaseDate)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      PortfolioName PurchaseDate     N
+ 1:            PKO1   2019-02-09 12345
+ 2:            PKO2   2020-03-22 25722
+ 3:          mBank1   2020-07-23  9784
+ 4:      Provident1   2020-11-03  3456
+ 5:      Provident2   2021-10-02  2003
+ 6:          Wonga6   2021-09-15  5678
+ 7:      Santander3   2018-08-12 25345
+ 8:          Pekao2   2019-01-18 17392
+ 9: BocianPozyczki4   2020-04-21  6734
+10:  HapiPozyczki22   2021-06-27  4770</code></pre>
+</div>
+</div>
+<ol start="8" type="1">
+<li>Jakie jest średnie zadłużenie w portfelu?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>cases[,.(<span class="at">AvgTOA=</span><span class="fu">mean</span>(TOA)), by<span class="ot">=</span>PortfolioName]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      PortfolioName    AvgTOA
+ 1:            PKO1  9905.989
+ 2:            PKO2  9941.925
+ 3:          mBank1  9909.940
+ 4:      Provident1  9827.448
+ 5:      Provident2 10417.013
+ 6:          Wonga6  9936.720
+ 7:      Santander3  9933.614
+ 8:          Pekao2  9933.053
+ 9: BocianPozyczki4  9796.263
+10:  HapiPozyczki22  9950.369</code></pre>
+</div>
+</div>
+<ol start="9" type="1">
+<li>Jaka jest suma wpłat w 12 miesięcy per portfel?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>events[<span class="fu">is.na</span>(PaymentAmount), PaymentAmount<span class="sc">:</span><span class="er">=</span><span class="fl">0.0</span>]</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>payments <span class="ot">&lt;-</span> events[,.(<span class="at">Payments12M=</span><span class="fu">sum</span>(PaymentAmount)), by<span class="ot">=</span>CaseId]</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(cases, CaseId)</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(payments, CaseId)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>cases <span class="ot">&lt;-</span> cases[payments]</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>cases[,.(<span class="at">SumOfPayments12M=</span><span class="fu">sum</span>(Payments12M)), by<span class="ot">=</span>PortfolioName]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      PortfolioName SumOfPayments12M
+ 1:      Santander3       12449570.7
+ 2:          mBank1        5038994.6
+ 3:            PKO2       12379150.2
+ 4:          Pekao2        8536537.7
+ 5:            PKO1        5860316.0
+ 6:      Provident1        1673025.2
+ 7:          Wonga6        2816456.5
+ 8:  HapiPozyczki22        2470016.2
+ 9: BocianPozyczki4        3550990.8
+10:      Provident2         995574.8</code></pre>
+</div>
+</div>
+<ol start="10" type="1">
+<li>Jaka jest skuteczność w 12 miesięcy per portfel?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>cases[,.(<span class="at">SR12M=</span><span class="fu">sum</span>(Payments12M)<span class="sc">/</span><span class="fu">sum</span>(TOA)), by<span class="ot">=</span>PortfolioName]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      PortfolioName      SR12M
+ 1:      Santander3 0.04944869
+ 2:          mBank1 0.05197044
+ 3:            PKO2 0.04840783
+ 4:          Pekao2 0.04941394
+ 5:            PKO1 0.04792169
+ 6:      Provident1 0.04925927
+ 7:          Wonga6 0.04991885
+ 8:  HapiPozyczki22 0.05204059
+ 9: BocianPozyczki4 0.05382896
+10:      Provident2 0.04771443</code></pre>
+</div>
+</div>
+<ol start="11" type="1">
+<li>Ile spraw dokonało wpłaty w 12 miesięcy w każdym portfelu? Jaki stanowią udział wszystkich spraw pod względem liczby spraw oraz zadłużenia?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>events[<span class="fu">is.na</span>(NumberOfPayment),NumberOfPayment<span class="sc">:</span><span class="er">=</span>0L]</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>if_pmt_12m <span class="ot">&lt;-</span> events[,.(<span class="at">IfPayment12M=</span><span class="fu">as.logical</span>(<span class="fu">sum</span>(NumberOfPayment))), by<span class="ot">=</span>CaseId]</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>if_pmt_6m <span class="ot">&lt;-</span> events[Month<span class="sc">&lt;=</span><span class="dv">6</span>,.(<span class="at">IfPayment6M=</span><span class="fu">as.logical</span>(<span class="fu">sum</span>(NumberOfPayment))), by<span class="ot">=</span>CaseId]</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(if_pmt_12m, CaseId)</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(if_pmt_6m, CaseId)</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>if_pmt <span class="ot">&lt;-</span> if_pmt_12m[if_pmt_6m]</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(cases, CaseId)</span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(if_pmt, CaseId)</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>cases <span class="ot">&lt;-</span> cases[if_pmt, nomatch<span class="ot">=</span>0L]</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>cases[,.(</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">NoOfCasesPay6M =</span> <span class="fu">sum</span>(IfPayment6M),</span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">PropOfCasesPay6M =</span> <span class="fu">sum</span>(IfPayment6M) <span class="sc">/</span> .N,</span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">PropOfToaPay6M =</span> <span class="fu">sum</span>(TOA <span class="sc">*</span> IfPayment6M) <span class="sc">/</span> <span class="fu">sum</span>(TOA),</span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">NoOfCasesPay12M =</span> <span class="fu">sum</span>(IfPayment12M),</span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">PropOfCasesPay12M =</span> <span class="fu">sum</span>(IfPayment12M) <span class="sc">/</span> .N,</span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">PropOfToaPay12M =</span> <span class="fu">sum</span>(TOA <span class="sc">*</span> IfPayment12M) <span class="sc">/</span> <span class="fu">sum</span>(TOA)</span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>  )]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   NoOfCasesPay6M PropOfCasesPay6M PropOfToaPay6M NoOfCasesPay12M
+1:          29488         0.260428      0.2750923           38365
+   PropOfCasesPay12M PropOfToaPay12M
+1:         0.3388266       0.3497683</code></pre>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,192 @@
+---
+title: "Lab1_Rozwiazania"
+format: html
+editor: visual
+---
+
+## Zadania Lab1
+
+Waszym zadaniem będzie odpowiedź na poniższe pytania:
+
+1.  Ile jest spraw w analizowanych zbiorach?
+
+```{r echo=TRUE}
+library(data.table)
+
+load("../KrukUWr2022.RData")
+
+cases[,.N]
+events[,.N]
+```
+
+2.  Jakie jest ich łączne zadłużenie?
+
+```{r echo=TRUE}
+cases[,sum(TOA)]
+```
+
+3.  Ile jest spraw kobiet i mężczyzn? Czy są sprawy bez przypisanej płci klienta?
+
+```{r echo=TRUE}
+cases[,.N,by=.(Gender)]
+```
+
+4.  Jaka jest suma wpłat wszystkich spraw w horyzoncie 12 miesięcy od ich zakupu?
+
+```{r echo=TRUE}
+events[,sum(PaymentAmount, na.rm=TRUE)]
+```
+
+5.  A jaka w 6 miesięcy?
+
+```{r echo=TRUE}
+events[Month<=6,sum(PaymentAmount, na.rm=TRUE)]
+```
+
+6.  Ile wpłaciła sprawa `CaseId=11478344` w pierwszym miesiącu obsługi, ile do 5 włącznie, a ile w całym dostępnym horyzoncie?
+
+```{r echo=TRUE}
+events[CaseId == 11478344 & Month == 1, PaymentAmount]
+# odp. 0.0
+
+events[CaseId == 11478344 & Month <= 6, sum(PaymentAmount, na.rm=TRUE)]
+
+events[CaseId == 11478344, sum(PaymentAmount, na.rm=TRUE)]
+
+```
+
+7.  Podzielcie zbiór spraw na portfele w sposób losowy, ale tak aby spełnić warunki z tabeli:
+
+| Nazwa portfela  | Liczba spraw | Data zakupu portfela |
+|-----------------|--------------|----------------------|
+| PKO1            | 12345        | 2019-02-09           |
+| PKO2            | 25722        | 2020-03-22           |
+| mBank1          | 9784         | 2020-07-23           |
+| Provident1      | 3456         | 2020-11-03           |
+| Provident2      | 2003         | 2021-10-02           |
+| Wonga6          | 5678         | 2021-09-15           |
+| Santander3      | 25345        | 2018-08-12           |
+| Pekao2          | 17392        | 2019-01-18           |
+| BocianPozyczki4 | 6734         | 2020-04-21           |
+| HapiPozyczki22  | 4770         | 2021-06-27           |
+
+Podpowiedź: Należy do zbioru danych dodać dwie kolumny: `Portfolio` oraz `PurchaseDate`
+
+```{r echo=TRUE, eval=FALSE}
+
+# rozwiązanie z użyciem pętli for
+
+portfolios <- data.table(
+  PortfolioName = c("PKO1", "PKO2", "mBank1", "Provident1", "Provident2", "Wonga6", "Santander3", "Pekao2", "BocianPozyczki4", "HapiPozyczki22"),
+  NoOfCases = c(12345, 25722, 9784, 3456, 2003, 5678, 25345, 17392, 6734, 4770),
+  PurchaseDate = as.Date(c("2019-02-09", "2020-03-22", "2020-07-23", "2020-11-03", "2021-10-02", "2021-09-15", "2018-08-12", "2019-01-18", "2020-04-21", "2021-06-27"))
+)
+
+new_columns <- data.table()
+
+for(i in 1:portfolios[,.N]) {
+  
+  new_columns <- rbindlist(list(
+    new_columns,
+    data.table(
+      PortfolioName = rep(portfolios[i, PortfolioName], times = portfolios[i, NoOfCases]),
+      PurchaseDate = rep(portfolios[i, PurchaseDate], times = portfolios[i, NoOfCases])
+    )
+  ))
+  
+}
+
+new_columns <- new_columns[sample(1:new_columns[,.N])]
+
+cases <- cbind(cases, new_columns)
+
+print(cases[,.N, by=.(PortfolioName, PurchaseDate)])
+
+```
+
+```{r echo=TRUE}
+
+# rozwiązanie z wykorzystaniem JOINów w data.table
+
+portfolios <- data.table(
+  PortfolioName = c("PKO1", "PKO2", "mBank1", "Provident1", "Provident2", "Wonga6", "Santander3", "Pekao2", "BocianPozyczki4", "HapiPozyczki22"),
+  NoOfCases = c(12345, 25722, 9784, 3456, 2003, 5678, 25345, 17392, 6734, 4770),
+  PurchaseDate = as.Date(c("2019-02-09", "2020-03-22", "2020-07-23", "2020-11-03", "2021-10-02", "2021-09-15", "2018-08-12", "2019-01-18", "2020-04-21", "2021-06-27"))
+)
+
+cases[,
+  PortfolioName:=sample(c(
+    rep("PKO1", times=12345),
+    rep("PKO2", times=25722),
+    rep("mBank1", times=9784),
+    rep("Provident1", times=3456),
+    rep("Provident2", times=2003),
+    rep("Wonga6", times=5678),
+    rep("Santander3", times=25345),
+    rep("Pekao2", times=17392),
+    rep("BocianPozyczki4", times=6734),
+    rep("HapiPozyczki22", times=4770)
+  ))]
+
+cases <- cases[portfolios[,.(PortfolioName, PurchaseDate)], on=c("PortfolioName" = "PortfolioName")]
+
+print(cases[,.N, by=.(PortfolioName, PurchaseDate)])
+
+```
+
+8.  Jakie jest średnie zadłużenie w portfelu?
+
+```{r echo=TRUE}
+cases[,.(AvgTOA=mean(TOA)), by=PortfolioName]
+```
+
+9.  Jaka jest suma wpłat w 12 miesięcy per portfel?
+
+```{r echo=TRUE}
+
+events[is.na(PaymentAmount), PaymentAmount:=0.0]
+payments <- events[,.(Payments12M=sum(PaymentAmount)), by=CaseId]
+
+setkey(cases, CaseId)
+setkey(payments, CaseId)
+
+cases <- cases[payments]
+
+cases[,.(SumOfPayments12M=sum(Payments12M)), by=PortfolioName]
+
+```
+
+10. Jaka jest skuteczność w 12 miesięcy per portfel?
+
+```{r echo=TRUE}
+cases[,.(SR12M=sum(Payments12M)/sum(TOA)), by=PortfolioName]
+```
+
+11. Ile spraw dokonało wpłaty w 12 miesięcy w każdym portfelu? Jaki stanowią udział wszystkich spraw pod względem liczby spraw oraz zadłużenia?
+
+```{r echo=TRUE}
+
+events[is.na(NumberOfPayment),NumberOfPayment:=0L]
+if_pmt_12m <- events[,.(IfPayment12M=as.logical(sum(NumberOfPayment))), by=CaseId]
+if_pmt_6m <- events[Month<=6,.(IfPayment6M=as.logical(sum(NumberOfPayment))), by=CaseId]
+
+setkey(if_pmt_12m, CaseId)
+setkey(if_pmt_6m, CaseId)
+
+if_pmt <- if_pmt_12m[if_pmt_6m]
+
+setkey(cases, CaseId)
+setkey(if_pmt, CaseId)
+
+cases <- cases[if_pmt, nomatch=0L]
+
+cases[,.(
+  NoOfCasesPay6M = sum(IfPayment6M),
+  PropOfCasesPay6M = sum(IfPayment6M) / .N,
+  PropOfToaPay6M = sum(TOA * IfPayment6M) / sum(TOA),
+  NoOfCasesPay12M = sum(IfPayment12M),
+  PropOfCasesPay12M = sum(IfPayment12M) / .N,
+  PropOfToaPay12M = sum(TOA * IfPayment12M) / sum(TOA)
+  )]
+
+```
