@@ -37,3 +37,7 @@
 ## Laboratorium 2
 
 - [Lista zadań](ListaZadan/Lab2_Zadania.qmd)
+
+## Laboratorium 4
+
+- [Lista zadań - błąd predykcji](ListaZadan/04_ListaBłądPredykcji.md)
