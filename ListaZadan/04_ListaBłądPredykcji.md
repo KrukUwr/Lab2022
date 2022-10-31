@@ -2,7 +2,7 @@
 # Metody Statystyczne w Zarządzaniu Wierzytelnościami Masowymi
 # Laboratorium 4
 
-## \textcolor{blue}{Dane aplikacyjne to dane dostępne na moment wyceny portfela}
+## \textcolor{Dane aplikacyjne to dane dostępne na moment wyceny portfela}{blue}
 ## \textcolor{blue}{Zadania odzwierciedlają sytuację wyceny nowego portfela wierzytelności}
 
 ## Zadanie 1
