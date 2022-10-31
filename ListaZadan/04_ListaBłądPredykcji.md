@@ -15,7 +15,7 @@ Przygotuj dane aplikacyjne (dane spraw dostępne na moment wyceny portfela z tab
 
 ## Zadanie 2
 
-Sprawdź oszacowanie <p style="color:red">treningowego błędu prognozy</p> (zbiór uczący to jednocześnie zbiór testowy) regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych:
+Sprawdź oszacowanie `treningowego błędu prognozy` (zbiór uczący to jednocześnie zbiór testowy) regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych:
 
 *	Wykorzystaj funkcję `knn.reg` z pakietu `FNN`.
 *	Sprawdź dla liczb najbliższych sąsiadów od 1 do 30 oraz dla wąskiego oraz szerokiego zbioru cech objaśniających.
@@ -25,7 +25,7 @@ Sprawdź oszacowanie <p style="color:red">treningowego błędu prognozy</p> (zbi
 
 ## Zadanie 3
 
-Sprawdź oszacowanie testowego błędu prognozy regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych.
+Sprawdź oszacowanie `testowego błędu prognozy` regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych.
 
 *	Wykorzystaj próbę treningową, walidacyjną oraz testową w proporcjach 50%, 25%, 25%.
 *	Załóż stały zbiór cech objaśniających wybrany w poprzednim zadaniu.
@@ -34,11 +34,11 @@ Sprawdź oszacowanie testowego błędu prognozy regresyjnego modelu k-najbliższ
 
 ## Zadanie 4
 
-Sprawdź oszacowanie testowego błędu prognozy regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych wykorzystując 5 i 10-krotną kroswalidację. Sprawdź dla liczb najbliższych sąsiadów od 1 do 30 oraz porównaj z wynikami z poprzednich punktów.
+Sprawdź oszacowanie `testowego błędu prognozy` regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych wykorzystując `5 i 10-krotną kroswalidację`. Sprawdź dla liczb najbliższych sąsiadów od 1 do 30 oraz porównaj z wynikami z poprzednich punktów.
 
 ## Zadanie 5
 
-Sprawdź oszacowanie testowego błędu prognozy regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych wykorzystując metodę bootstrap oraz leave one-out bootstrap dla optymalnej liczby najbliższych sąsiadów wybranej w poprzednim punkcie. 
+Sprawdź oszacowanie `testowego błędu prognozy` regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych wykorzystując metodę `bootstrap` oraz `leave one-out bootstrap` dla optymalnej liczby najbliższych sąsiadów wybranej w poprzednim punkcie. 
 
 ## Zadanie 6
 
