@@ -15,7 +15,7 @@ Przygotuj dane aplikacyjne (dane spraw dostępne na moment wyceny portfela z tab
 
 ## Zadanie 2
 
-Sprawdź oszacowanie <mark>treningowego błędu prognozy</mark> (zbiór uczący to jednocześnie zbiór testowy) regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych:
+Sprawdź oszacowanie <p style="color:red">treningowego błędu prognozy</p> (zbiór uczący to jednocześnie zbiór testowy) regresyjnego modelu k-najbliższych sąsiadów prognozującego 6-cio miesięczną skuteczność za pomocą cech aplikacyjnych:
 
 *	Wykorzystaj funkcję `knn.reg` z pakietu `FNN`.
 *	Sprawdź dla liczb najbliższych sąsiadów od 1 do 30 oraz dla wąskiego oraz szerokiego zbioru cech objaśniających.
