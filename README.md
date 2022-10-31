@@ -40,4 +40,4 @@
 
 ## Laboratorium 4
 
-- [Lista zadań - błąd predykcji](ListaZadan/04_ListaBłądPredykcji.md)
+- [Lista zadań - błąd predykcji, zbiory TVT, kroswalidacja, bootstrap](ListaZadan/04_ListaBłądPredykcji.md)
