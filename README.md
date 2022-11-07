@@ -38,6 +38,10 @@
 
 - [Lista zadań](ListaZadan/Lab2_Zadania.qmd)
 
+## Laboratorium 3
+
+- [Lista zadań](ListaZadan/Lab3_Zadania.qmd)
+
 ## Laboratorium 4
 
 - [Lista zadań - błąd predykcji, zbiory TVT, kroswalidacja, bootstrap](ListaZadan/04_ListaBłądPredykcji.md)
