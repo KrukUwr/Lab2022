@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lab2_Rozwiazania</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="Lab2_Rozwiazania_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Lab2_Rozwiazania_files/libs/quarto-html/quarto.js"></script>
+<script src="Lab2_Rozwiazania_files/libs/quarto-html/popper.min.js"></script>
+<script src="Lab2_Rozwiazania_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Lab2_Rozwiazania_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Lab2_Rozwiazania_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Lab2_Rozwiazania_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Lab2_Rozwiazania_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Lab2_Rozwiazania_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Lab2_Rozwiazania_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#zadanie-1" id="toc-zadanie-1" class="nav-link active" data-scroll-target="#zadanie-1">Zadanie #1</a></li>
+  <li><a href="#zadanie-2" id="toc-zadanie-2" class="nav-link" data-scroll-target="#zadanie-2">Zadanie #2</a></li>
+  <li><a href="#zadanie-3" id="toc-zadanie-3" class="nav-link" data-scroll-target="#zadanie-3">Zadanie #3</a></li>
+  <li><a href="#zadanie-4" id="toc-zadanie-4" class="nav-link" data-scroll-target="#zadanie-4">Zadanie #4</a></li>
+  <li><a href="#zadanie-5" id="toc-zadanie-5" class="nav-link" data-scroll-target="#zadanie-5">Zadanie #5</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lab2_Rozwiazania</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"../KrukUWr2022.RData"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="zadanie-1" class="level2">
+<h2 class="anchored" data-anchor-id="zadanie-1">Zadanie #1</h2>
+<p>Sprawdź poprawność danych w zakresie punktów podanych ze slajdu <em>poprawność danych.</em> Na zajęciach wybierz 1-2 punkty.</p>
+<p><u><strong>Składowe zadłużenie</strong></u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>cases[, SumOfToaComponents <span class="sc">:</span><span class="er">=</span> Principal<span class="sc">+</span>Interest<span class="sc">+</span>Other]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>cases[, ToaDiff <span class="sc">:</span><span class="er">=</span> TOA <span class="sc">-</span> SumOfToaComponents]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>cases[<span class="fu">abs</span>(ToaDiff) <span class="sc">&gt;=</span> <span class="fl">0.01</span>, .N]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1221</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>cases[<span class="fu">abs</span>(ToaDiff) <span class="sc">&gt;=</span> <span class="fl">0.01</span>, .(CaseId, Principal, Interest, Other, TOA, SumOfToaComponents, ToaDiff)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        CaseId Principal Interest   Other     TOA SumOfToaComponents ToaDiff
+   1:  8181661   3035.59    28.43 381.550 3410.57           3445.570 -35.000
+   2:  8181664   1259.14   250.18 349.484 1823.80           1858.804 -35.004
+   3:  8181690   1576.35   304.99 413.455 2259.80           2294.795 -34.995
+   4:  8181693    813.89   136.98 225.889 1141.76           1176.759 -34.999
+   5:  8181699   2372.45   442.41 639.355 3419.22           3454.215 -34.995
+  ---                                                                       
+1217: 10719832   1497.52   232.58 369.310 2064.41           2099.410 -35.000
+1218: 10719846   4192.27   706.98 654.730 5538.98           5553.980 -15.000
+1219: 10719878   1985.23   214.51 474.170 2638.91           2673.910 -35.000
+1220: 10719893   2000.77   308.45 472.380 2746.60           2781.600 -35.000
+1221: 10719911   2322.55   199.90 451.820 2939.27           2974.270 -35.000</code></pre>
+</div>
+</div>
+<p>1221 spraw gdzie różnica między TOA a sumą komponentów zadłużenia jest większa lub równa 1 grosz</p>
+<p><u><strong>Relacja kapitał vs kwota pożyczki</strong></u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>cases[Principal<span class="sc">-</span>LoanAmount<span class="sc">&gt;</span><span class="fl">0.01</span>, .N]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8940</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cases[Principal<span class="sc">-</span>LoanAmount<span class="sc">&gt;</span><span class="fl">0.01</span>, .(CaseId, Product, LoanAmount, Principal, <span class="at">Diff=</span>LoanAmount<span class="sc">-</span>Principal)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        CaseId     Product LoanAmount Principal      Diff
+   1:  8086519 Credit card   3635.538  3635.626   -0.0881
+   2:  8088264 Credit card  22431.882 22432.426   -0.5435
+   3:  8209367 Credit card   2000.000  2193.310 -193.3100
+   4:  8209379 Credit card   8000.000  8041.860  -41.8600
+   5:  8209387 Credit card   2923.000  2945.520  -22.5200
+  ---                                                    
+8936: 11478349 Credit card    920.000  1187.930 -267.9300
+8937: 11478357 Credit card   1200.000  1510.530 -310.5300
+8938: 11478361 Credit card    920.000  1109.230 -189.2300
+8939: 11478365 Credit card    920.000  1156.240 -236.2400
+8940: 11478366 Credit card    920.000  1185.550 -265.5500</code></pre>
+</div>
+</div>
+<p>Liczba spraw, gdzie kapitał do spłaty jest większy niż kwota pożyczki: 8940</p>
+<p><u><strong>Chronologia dat</strong></u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>cases[DPD <span class="sc">&gt;</span> D_ContractDateToImportDate, .(CaseId, D_ContractDateToImportDate, DPD)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       CaseId D_ContractDateToImportDate  DPD
+  1:  8182216                        237  240
+  2:  8182217                        238  240
+  3:  8182247                        260  270
+  4:  8209955                        231  240
+  5:  8209956                        231  240
+ ---                                         
+127: 10943607                       1016 1073
+128: 10943970                        877 1108
+129: 10944079                        821  975
+130: 10944139                        759  891
+131: 10944144                        756  898</code></pre>
+</div>
+</div>
+<p>131 spraw z nieprawidłową relacja DPD - liczba dni od podpisania umowy</p>
+<p><u><strong>Relacja zmiennych związanych z egzekucją komorniczą</strong></u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>cases[,.N,by<span class="ot">=</span>.(Bailiff, ClosedExecution)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Bailiff ClosedExecution     N
+1:       0               0 97036
+2:       1               0  1777
+3:      NA              NA  6666
+4:       1               1  7750</code></pre>
+</div>
+</div>
+<p>Brak relacji, które wskazywałyby na nieprawidłowości w danych.</p>
+<p><u><strong>Relacja wartości w kolumnach związanych z jednostką terytorialną (<em>Land</em>)</strong></u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Kolumny: Land, GDPPerCapita, MeanSalary</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>land_info <span class="ot">&lt;-</span> cases[,.N, by<span class="ot">=</span>.(Land, GDPPerCapita, MeanSalary)]</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">setorder</span>(land_info, Land, <span class="at">na.last =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># każdy land powienien wystąpić dokładnie raz, jeśli wystepuje więcej razy tzn. że mamy jakieś błędy</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">duplicated</span>(land_info<span class="sc">$</span>Land))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(land_info[<span class="dv">31</span><span class="sc">:</span><span class="dv">38</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Land GDPPerCapita MeanSalary    N
+1:   31         5464       1262 1237
+2:   32         8011       1591 2137
+3:   33         3946       1273 1621
+4:   34         4353       1320 1749
+5:   35        10507       1772 4529
+6:   36         5250       1427 1445
+7:   37         3193       1261 1798
+8:   NA           NA         NA 4278</code></pre>
+</div>
+</div>
+<p>Są braki danych natomiast nie ma zmultiplikowanych wartości dla pojedynczego landu, więc wszystko wygląda OK.</p>
+<p><u><strong>Relacja wartości w kolumnach związanych z ostatnią wpłatą</strong></u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>cases[LastPaymentAmount<span class="sc">&lt;</span><span class="fl">0.0</span>, ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Empty data.table (0 rows and 22 cols): CaseId,LoanAmount,TOA,Principal,Interest,Other...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Brak ujemtnych wpłat - OK</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>cases[LastPaymentAmount <span class="sc">&gt;</span> <span class="dv">0</span> <span class="sc">&amp;</span> M_LastPaymentToImportDate<span class="sc">==</span><span class="dv">50</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Empty data.table (0 rows and 22 cols): CaseId,LoanAmount,TOA,Principal,Interest,Other...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Brak kwot wpłat tam gdzie liczba miesięcy od ostatniej wplaty przyjmuje sztuczną wartość 50</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cases[<span class="fu">is.na</span>(LastPaymentAmount), .(M_LastPaymentToImportDate, LastPaymentAmount)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> M_LastPaymentToImportDate LastPaymentAmount
+ Min.   : NA               Min.   : NA      
+ 1st Qu.: NA               1st Qu.: NA      
+ Median : NA               Median : NA      
+ Mean   :NaN               Mean   :NaN      
+ 3rd Qu.: NA               3rd Qu.: NA      
+ Max.   : NA               Max.   : NA      
+ NA's   :11020             NA's   :11020    </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cases[<span class="fu">is.na</span>(M_LastPaymentToImportDate), .(M_LastPaymentToImportDate, LastPaymentAmount)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> M_LastPaymentToImportDate LastPaymentAmount
+ Min.   : NA               Min.   : NA      
+ 1st Qu.: NA               1st Qu.: NA      
+ Median : NA               Median : NA      
+ Mean   :NaN               Mean   :NaN      
+ 3rd Qu.: NA               3rd Qu.: NA      
+ Max.   : NA               Max.   : NA      
+ NA's   :11020             NA's   :11020    </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Brak info w jednej z kolumn gdy druga jest NA. Również OK, choć hipotetycznie mogłoby się tak zdarzyć i to również byloby OK</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Brak błędów pod kątem wpłat przed importem</p>
+<p><u><strong>Kwoty wpłat z tabeli <em>events</em></strong></u></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>events[PaymentAmount<span class="sc">&lt;</span><span class="dv">0</span>, .(CaseId, Month, PaymentAmount, NumberOfPayment)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      CaseId Month PaymentAmount NumberOfPayment
+ 1:  8402162    12      -70.8912               1
+ 2:  8402169    12     -133.6418               1
+ 3:  8583386    11     -207.2904               2
+ 4:  9161001     7     -651.3264               2
+ 5:  9658673     7     -212.3892               3
+ 6:  9775661     4      -64.2244               1
+ 7:  9915762     7     -652.9979               1
+ 8:  9922645     7     -640.5800               1
+ 9: 10027472     7     -288.5601               1
+10: 10387740    10     -133.9253               1
+11: 10939495     3     -244.4070               1
+12: 10940968     3     -120.7796               1
+13: 10941702     3    -5078.0776               1
+14: 10942820     7     -160.8220               1
+15: 10943778     3    -1992.7235               1
+16: 10944203     7      -17.5434               1
+17: 11150096     3     -126.8209               1
+18: 11150969     3    -2487.6105               1
+19: 11462819    10     -119.3391               1</code></pre>
+</div>
+</div>
+<p>Są sprawy, gdzie są ujemne wpłaty. Należy zdecydować co w takiej sytuacji zrobić. Zostawić, przypisać 0.0 lub rozłożyć ujemne wpłaty na pozostałe dodatnie wpłaty w innych miesiącach dla danej sprawy.</p>
+</section>
+<section id="zadanie-2" class="level2">
+<h2 class="anchored" data-anchor-id="zadanie-2">Zadanie #2</h2>
+<p>Zdiagnozuj kolumny, które najlepiej różnicują (wpływają na) 12 miesięczną skuteczność. Mogą to być kolumny zarówno z tabeli <em>cases</em> jak i <em>events</em> (oprócz liczby wpłat). Z Tabeli events weź informacje z wierszy do max 6 miesiąca.</p>
+<p>Użyj tych kolumn do zaprezentowania wybranych charakterystyk dla badanych zbiorów danych. Wynikiem powinna być tabela w formie, jak w przykładzie dla kolumny <em>Product</em>:</p>
+<table class="table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>NoOfCases</th>
+<th>ShareOfCases</th>
+<th>Principal</th>
+<th>ShareOfPrincipal*</th>
+<th>TOA</th>
+<th>ShareOfTOA</th>
+<th>AvgDPD</th>
+<th>SR6M</th>
+<th>SR12M</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Loan</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>CreditCard</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>* Udział kapitału liczymy jako Principal/TOA dla danej grupy. Jest to sposób inny niż dla pozostałych kolumn “Share”, które obliczamy jako suma dla grupy podzielona przez suma dla całości</p>
+<p><u>Taśma amatorska</u>: rozwiązanie w formie “skryptowej”</p>
+<p><u>Taśma profesjonalna</u>: rozwiązanie przy użyciu własnych funkcji</p>
+<hr>
+<p>Wyznaczenie istotnych cech w kontekście wpływu na SR 12M, np. na podstawie współczynników korelacji:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(data.table)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"../KrukUWr2022.RData"</span>)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"Lab2_Functions.R"</span>)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>events[<span class="fu">is.na</span>(PaymentAmount), PaymentAmount<span class="sc">:</span><span class="er">=</span><span class="fl">0.0</span>]</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>payments <span class="ot">&lt;-</span> <span class="fu">aggregatePayments</span>(<span class="at">events =</span> events, <span class="at">horizons =</span> <span class="fu">c</span>(6L, 12L))</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(cases, CaseId)</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(payments, CaseId)</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>cases <span class="ot">&lt;-</span> cases[payments]</span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>cases[,<span class="st">`</span><span class="at">:=</span><span class="st">`</span>(</span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">IsLoan =</span> <span class="fu">as.integer</span>(Product <span class="sc">==</span> <span class="st">"Cash loan"</span>),</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">Female =</span> <span class="fu">as.integer</span>(Gender <span class="sc">==</span> <span class="st">"FEMALE"</span>),</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">SR6M=</span>SumOfPayments6M<span class="sc">/</span>TOA,</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">SR12M=</span>SumOfPayments12M<span class="sc">/</span>TOA)]</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a>cases[, <span class="st">`</span><span class="at">:=</span><span class="st">`</span>(</span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">Product=</span><span class="cn">NULL</span>,</span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">Gender=</span><span class="cn">NULL</span>,</span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">SumOfPayments12M=</span><span class="cn">NULL</span>)]</span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a>corr_matrix <span class="ot">&lt;-</span> <span class="fu">cor</span>(<span class="at">x =</span> cases, <span class="at">use =</span> <span class="st">"pairwise.complete.obs"</span>)</span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(corr_matrix[,<span class="st">"SR12M"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> M_LastPaymentToImportDate                        TOA 
+              -0.188815203               -0.145017222 
+                 Principal                   Interest 
+              -0.136213386               -0.134243112 
+                LoanAmount                      Other 
+              -0.117083121               -0.095351680 
+                       DPD             ExternalAgency 
+              -0.079223371               -0.056859728 
+                    IsLoan                    Bailiff 
+              -0.053354316               -0.046839665 
+           ClosedExecution                 MeanSalary 
+              -0.043678719               -0.021200232 
+          PopulationInCity               GDPPerCapita 
+              -0.020342823               -0.019497222 
+                      Land          LastPaymentAmount 
+               0.008348189                0.027709615 
+                    Female                        Age 
+               0.054910075                0.058866696 
+                    CaseId D_ContractDateToImportDate 
+               0.073818535                0.079053184 
+           SumOfPayments6M                       SR6M 
+               0.299926010                0.876125518 
+                     SR12M 
+               1.000000000 </code></pre>
+</div>
+</div>
+<p>Tabele z podsumowaniami</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Wybrane cechy do podsumowania (po jednej ze zbioru cases i events):</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="co"># SR6M</span></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co"># M_LastPaymentToImportDate                        </span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Stworzenie grup wg ww cech:</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>cases[,<span class="st">`</span><span class="at">:=</span><span class="st">`</span>(</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">M_LastPaymentToImportDateGroup =</span> <span class="fu">cut</span>(</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> M_LastPaymentToImportDate, </span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">12</span>, <span class="dv">18</span>, <span class="dv">24</span>, <span class="dv">36</span>, <span class="dv">50</span>), </span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">include.lowest=</span><span class="cn">TRUE</span>),</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">SR6MGroup =</span> <span class="fu">cut</span>(</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> SR6M, </span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="cn">Inf</span>, <span class="dv">0</span><span class="sc">:</span><span class="dv">10</span><span class="sc">/</span><span class="dv">10</span>, <span class="cn">Inf</span>), </span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">include.lowest=</span><span class="cn">TRUE</span>)</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>)]</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a><span class="fu">summarizeCasesByVariable</span>(<span class="at">cases =</span> cases, <span class="at">events =</span> events, </span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">variable_name =</span> <span class="st">"M_LastPaymentToImportDateGroup"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   M_LastPaymentToImportDateGroup NoOfCases ShareOfCases Principal
+1:                           &lt;NA&gt;     11020        11020  41581913
+2:                          [1,6]      6487         6487 107198012
+3:                         (6,12]      4064         4064  33612928
+4:                        (12,18]      3570         3570  28081063
+5:                        (18,24]      3998         3998  32415081
+6:                        (24,36]     19415        19415 111689281
+7:                        (36,50]     64675        64675 511777924
+8:                          TOTAL    113229            1 866356201
+   ShareOfPrincipal        TOA ShareOfTOA   AvgDPD       SR6M      SR12M
+1:        0.8523247   48786469 0.04339744 848.2786 0.02984348 0.05615137
+2:        0.8089490  132515161 0.11787733 421.4236 0.05493508 0.09903040
+3:        0.8290408   40544360 0.03606577 298.2596 0.05679199 0.10698721
+4:        0.8106781   34638981 0.03081270 309.8905 0.04596715 0.08597534
+5:        0.8244264   39318346 0.03497518 319.9213 0.04160256 0.08024449
+6:        0.8066288  138464292 0.12316931 334.5872 0.03030918 0.06293776
+7:        0.7418029  689910908 0.61370227 796.0781 0.01419529 0.03003669
+8:        0.7706571 1124178517 1.00000000 647.6455 0.02513525 0.04961012</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summarizeCasesByVariable</span>(<span class="at">cases =</span> cases, <span class="at">events =</span> events, <span class="at">variable_name =</span> <span class="st">"SR6MGroup"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    SR6MGroup NoOfCases ShareOfCases   Principal ShareOfPrincipal          TOA
+ 1:  [-Inf,0]     83766        83766 617980196.7        0.7581901  815072897.1
+ 2:   (0,0.1]     15110        15110 190710198.4        0.8008069  238147537.9
+ 3: (0.1,0.2]      5499         5499  34446396.1        0.8181920   42100625.5
+ 4: (0.2,0.3]      2358         2358   8760106.2        0.8099533   10815569.3
+ 5: (0.3,0.4]      1381         1381   3441454.8        0.8049743    4275235.8
+ 6: (0.4,0.5]       841          841   2259009.9        0.8090227    2792270.1
+ 7: (0.5,0.6]       602          602   1455708.1        0.7914286    1839342.3
+ 8: (0.6,0.7]       501          501   1545748.2        0.7918321    1952116.0
+ 9: (0.7,0.8]       814          814   1977502.3        0.8076950    2448327.9
+10: (0.8,0.9]       987          987   1583757.2        0.8068244    1962951.5
+11:   (0.9,1]       812          812   1404951.5        0.7878127    1783357.2
+12:  (1, Inf]       558          558    791171.2        0.8005481     988286.9
+13:     TOTAL    113229            1 866356200.5        0.7706571 1124178517.4
+      ShareOfTOA   AvgDPD          SR6M       SR12M
+ 1: 0.7250386700 680.5406 -1.195404e-05 0.007819501
+ 2: 0.2118413883 579.4742  3.613194e-02 0.083930012
+ 3: 0.0374501245 530.3334  1.379048e-01 0.261951066
+ 4: 0.0096208646 496.7155  2.409622e-01 0.436176921
+ 5: 0.0038029866 467.6881  3.441501e-01 0.616309714
+ 6: 0.0024838316 520.0481  4.451631e-01 0.692954822
+ 7: 0.0016361657 501.7479  5.538667e-01 0.732149709
+ 8: 0.0017364822 538.3442  6.506287e-01 0.721319896
+ 9: 0.0021778818 604.7278  7.492536e-01 0.778969260
+10: 0.0017461208 546.8969  8.496062e-01 0.858357695
+11: 0.0015863648 579.3043  9.512476e-01 0.952887817
+12: 0.0008791192 611.7736  1.060154e+00 1.060068211
+13: 1.0000000000 647.6455  2.513525e-02 0.049610121</code></pre>
+</div>
+</div>
+</section>
+<section id="zadanie-3" class="level2">
+<h2 class="anchored" data-anchor-id="zadanie-3">Zadanie #3</h2>
+<p>Napisz funkcję, która przyjmie jako argumenty (1) wektor oraz (2) metodę przekształcenia danych w tym wektorze. W zależności od wartości z argumentu (2) funkcja zwróci:</p>
+<ul>
+<li><p>wektor <em>zestandaryzowany</em> (średnia=0, wariancja=1)</p></li>
+<li><p>wektor <em>znormalizowany</em> (przekształcenie wartości zmiennej na odcinek [0, 1])</p></li>
+<li><p>wektor zlogarytmowany</p></li>
+<li><p>wektor spierwiastkowany</p></li>
+</ul>
+<p>Wyznacz macierz współczynników korelacji między wybraną zmienną o wartościach oryginalnych i jej wartościami przekształconymi. Chodzi o wybrana zmienną numeryczną z tabeli cases.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>transformVariable <span class="ot">&lt;-</span> <span class="cf">function</span>(x, method, <span class="at">na.rm=</span><span class="cn">TRUE</span>) {</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(method <span class="sc">==</span> <span class="st">"standardize"</span>) {</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>    y <span class="ot">&lt;-</span> <span class="fu">standardize</span>(<span class="at">x =</span> x, <span class="at">na.rm =</span> na.rm)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span>(method <span class="sc">==</span> <span class="st">"normalize"</span>) {</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>    y <span class="ot">&lt;-</span> <span class="fu">normalize</span>(<span class="at">x =</span> x, <span class="at">na.rm =</span> na.rm)</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span>(method <span class="sc">==</span> <span class="st">"log"</span>) {</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>    y <span class="ot">&lt;-</span> <span class="fu">log</span>(x)</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span>(method <span class="sc">==</span> <span class="st">"sqrt"</span>) {</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>    y <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(x)</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">stop</span>(<span class="st">"Unknown method."</span>)</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(y)</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>standardize <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">na.rm=</span><span class="cn">TRUE</span>) {</span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> (x <span class="sc">-</span> <span class="fu">mean</span>(x, <span class="at">na.rm=</span>na.rm)) <span class="sc">/</span> <span class="fu">sd</span>(x, <span class="at">na.rm=</span>na.rm)</span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(y)</span>
+<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-25"><a href="#cb35-25" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb35-26"><a href="#cb35-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-27"><a href="#cb35-27" aria-hidden="true" tabindex="-1"></a>normalize <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">na.rm=</span><span class="cn">TRUE</span>) {</span>
+<span id="cb35-28"><a href="#cb35-28" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-29"><a href="#cb35-29" aria-hidden="true" tabindex="-1"></a>  y <span class="ot">&lt;-</span> (x <span class="sc">-</span> <span class="fu">min</span>(x, <span class="at">na.rm=</span>na.rm)) <span class="sc">/</span> (<span class="fu">max</span>(x, <span class="at">na.rm=</span>na.rm) <span class="sc">-</span> <span class="fu">min</span>(x, <span class="at">na.rm=</span>na.rm))</span>
+<span id="cb35-30"><a href="#cb35-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-31"><a href="#cb35-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(y)</span>
+<span id="cb35-32"><a href="#cb35-32" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb35-33"><a href="#cb35-33" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb35-34"><a href="#cb35-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-35"><a href="#cb35-35" aria-hidden="true" tabindex="-1"></a><span class="co"># sprawdzenie</span></span>
+<span id="cb35-36"><a href="#cb35-36" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">transformVariable</span>(cases<span class="sc">$</span>TOA, <span class="at">method =</span> <span class="st">"standardize"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-0.7213 -0.5817 -0.3949  0.0000  0.1360  6.5436 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">transformVariable</span>(cases<span class="sc">$</span>TOA, <span class="at">method =</span> <span class="st">"normalize"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+0.00000 0.01921 0.04493 0.09929 0.11801 1.00000 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">transformVariable</span>(cases<span class="sc">$</span>TOA, <span class="at">method =</span> <span class="st">"log"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ -3.912   7.561   8.410   8.411   9.376  11.513 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">transformVariable</span>(cases<span class="sc">$</span>TOA, <span class="at">method =</span> <span class="st">"sqrt"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  0.1414  43.8339  67.0261  83.0661 108.6302 316.2227 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(cases<span class="sc">$</span>TOA, <span class="fu">transformVariable</span>(cases<span class="sc">$</span>TOA, <span class="at">method =</span> <span class="st">"standardize"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(cases<span class="sc">$</span>TOA, <span class="fu">transformVariable</span>(cases<span class="sc">$</span>TOA, <span class="at">method =</span> <span class="st">"normalize"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(cases<span class="sc">$</span>TOA, <span class="fu">transformVariable</span>(cases<span class="sc">$</span>TOA, <span class="at">method =</span> <span class="st">"log"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7656594</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(cases<span class="sc">$</span>TOA, <span class="fu">transformVariable</span>(cases<span class="sc">$</span>TOA, <span class="at">method =</span> <span class="st">"sqrt"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.9535541</code></pre>
+</div>
+</div>
+</section>
+<section id="zadanie-4" class="level2">
+<h2 class="anchored" data-anchor-id="zadanie-4">Zadanie #4</h2>
+<p>Wyznacz krzywe skuteczności wyników w horyzoncie 12 miesięcy w rozbiciu na grupy wg grup wyznaczonych w zadaniu #2</p>
+<p>Wynik jako tabela np.</p>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gender</th>
+<th>M1</th>
+<th>M2</th>
+<th>M3</th>
+<th>M4</th>
+<th>M5</th>
+<th>M6</th>
+<th>M7</th>
+<th>M8</th>
+<th>M9</th>
+<th>M10</th>
+<th>M11</th>
+<th>M12</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F/M</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"Lab2_Functions.R"</span>)</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>payments <span class="ot">&lt;-</span> <span class="fu">aggregatePayments</span>(events, <span class="at">horizons =</span> 1L<span class="sc">:</span>12L)</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>groups <span class="ot">&lt;-</span> cases[,.(</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a>  CaseId,</span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>  TOA,</span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">M_LastPaymentToImportDateGroup =</span> <span class="fu">cut</span>(</span>
+<span id="cb51-9"><a href="#cb51-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> M_LastPaymentToImportDate, </span>
+<span id="cb51-10"><a href="#cb51-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">6</span>, <span class="dv">12</span>, <span class="dv">18</span>, <span class="dv">24</span>, <span class="dv">36</span>, <span class="dv">50</span>), </span>
+<span id="cb51-11"><a href="#cb51-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">include.lowest=</span><span class="cn">TRUE</span>)</span>
+<span id="cb51-12"><a href="#cb51-12" aria-hidden="true" tabindex="-1"></a>)]</span>
+<span id="cb51-13"><a href="#cb51-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-14"><a href="#cb51-14" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(payments, CaseId)</span>
+<span id="cb51-15"><a href="#cb51-15" aria-hidden="true" tabindex="-1"></a><span class="fu">setkey</span>(groups, CaseId)</span>
+<span id="cb51-16"><a href="#cb51-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-17"><a href="#cb51-17" aria-hidden="true" tabindex="-1"></a>payments <span class="ot">&lt;-</span> payments[groups]</span>
+<span id="cb51-18"><a href="#cb51-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-19"><a href="#cb51-19" aria-hidden="true" tabindex="-1"></a>sr <span class="ot">&lt;-</span> payments[, .(</span>
+<span id="cb51-20"><a href="#cb51-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">M1 =</span> <span class="fu">sum</span>(SumOfPayments1M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-21"><a href="#cb51-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">M2 =</span> <span class="fu">sum</span>(SumOfPayments2M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-22"><a href="#cb51-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">M3 =</span> <span class="fu">sum</span>(SumOfPayments3M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-23"><a href="#cb51-23" aria-hidden="true" tabindex="-1"></a>  <span class="at">M4 =</span> <span class="fu">sum</span>(SumOfPayments4M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-24"><a href="#cb51-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">M5 =</span> <span class="fu">sum</span>(SumOfPayments5M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-25"><a href="#cb51-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">M6 =</span> <span class="fu">sum</span>(SumOfPayments6M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-26"><a href="#cb51-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">M7 =</span> <span class="fu">sum</span>(SumOfPayments7M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-27"><a href="#cb51-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">M8 =</span> <span class="fu">sum</span>(SumOfPayments8M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-28"><a href="#cb51-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">M9 =</span> <span class="fu">sum</span>(SumOfPayments9M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-29"><a href="#cb51-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">M10 =</span> <span class="fu">sum</span>(SumOfPayments10M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-30"><a href="#cb51-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">M11 =</span> <span class="fu">sum</span>(SumOfPayments11M)<span class="sc">/</span><span class="fu">sum</span>(TOA),</span>
+<span id="cb51-31"><a href="#cb51-31" aria-hidden="true" tabindex="-1"></a>  <span class="at">M12 =</span> <span class="fu">sum</span>(SumOfPayments12M)<span class="sc">/</span><span class="fu">sum</span>(TOA)</span>
+<span id="cb51-32"><a href="#cb51-32" aria-hidden="true" tabindex="-1"></a>), by <span class="ot">=</span> M_LastPaymentToImportDateGroup]</span>
+<span id="cb51-33"><a href="#cb51-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-34"><a href="#cb51-34" aria-hidden="true" tabindex="-1"></a><span class="fu">setorder</span>(sr, M_LastPaymentToImportDateGroup)</span>
+<span id="cb51-35"><a href="#cb51-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-36"><a href="#cb51-36" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(sr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   M_LastPaymentToImportDateGroup          M1          M2          M3
+1:                           &lt;NA&gt; 0.004323764 0.010716425 0.016119502
+2:                          [1,6] 0.008670007 0.020600958 0.029581444
+3:                         (6,12] 0.007874764 0.019503440 0.028842853
+4:                        (12,18] 0.005821407 0.016147331 0.023350378
+5:                        (18,24] 0.005973757 0.014966069 0.021061829
+6:                        (24,36] 0.004048844 0.009901650 0.014757103
+7:                        (36,50] 0.001774819 0.004239894 0.006689124
+            M4         M5         M6         M7         M8         M9
+1: 0.021020403 0.02525540 0.02984348 0.03451830 0.03940175 0.04377450
+2: 0.038410040 0.04622371 0.05493508 0.06203398 0.06982299 0.07750687
+3: 0.038633122 0.04753563 0.05679199 0.06532656 0.07459148 0.08288827
+4: 0.030759417 0.03833655 0.04596715 0.05254962 0.05972901 0.06638663
+5: 0.028283294 0.03541865 0.04160256 0.04945435 0.05591312 0.06200976
+6: 0.019572177 0.02458672 0.03030918 0.03556663 0.04138819 0.04755653
+7: 0.009236192 0.01158163 0.01419529 0.01667617 0.01941207 0.02207724
+          M10        M11        M12
+1: 0.04808467 0.05249258 0.05615137
+2: 0.08443826 0.09165608 0.09903040
+3: 0.09115322 0.09861053 0.10698721
+4: 0.07248825 0.07979404 0.08597534
+5: 0.06827560 0.07474388 0.08024449
+6: 0.05283035 0.05789652 0.06293776
+7: 0.02477983 0.02741491 0.03003669</code></pre>
+</div>
+</div>
+<p>lub</p>
+<table>
+<thead>
+<tr class="header">
+<th>Month</th>
+<th>Female</th>
+<th>Male</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<div class="cell">
+
+</div>
+</section>
+<section id="zadanie-5" class="level2">
+<h2 class="anchored" data-anchor-id="zadanie-5">Zadanie #5</h2>
+<p>Wyniki z zadania 5 przedstaw w formie wykresu / wykresów.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>sr_long <span class="ot">&lt;-</span> <span class="fu">melt</span>(<span class="at">data=</span>sr, <span class="at">id.vars=</span><span class="st">"M_LastPaymentToImportDateGroup"</span>, <span class="at">variable.name =</span> <span class="st">"Month"</span>, <span class="at">value.name =</span> <span class="st">"SR"</span>)</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>sr_long[,Month<span class="sc">:</span><span class="er">=</span><span class="fu">as.integer</span>(<span class="fu">sub</span>(<span class="st">"M"</span>, <span class="st">""</span>, Month))]</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> sr_long, <span class="fu">aes</span>(<span class="at">x =</span> Month, <span class="at">y =</span> SR, <span class="at">color =</span> M_LastPaymentToImportDateGroup, <span class="at">group =</span> M_LastPaymentToImportDateGroup)) <span class="sc">+</span></span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggtitle</span>(<span class="st">"Cumulative SR"</span>) <span class="sc">+</span></span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="Lab2_Rozwiazania_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
