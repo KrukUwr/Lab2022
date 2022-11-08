@@ -10,9 +10,10 @@ samples <- caret::createFolds(
   k=3)
 
 events[is.na(PaymentAmount), PaymentAmount:=0.0]
+events[is.na(NumberOfPayment), NumberOfPayment:=0]
 
 payments_12m <- events[,.(
-    NumberOfPayments = sum(NumberOfPayment), 
+    IfPayment = as.integer(sum(NumberOfPayment)>0), 
     SumOfPayments = sum(PaymentAmount)),
   by = .(CaseId)]
 
