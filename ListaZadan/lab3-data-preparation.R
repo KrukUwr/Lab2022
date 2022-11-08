@@ -35,3 +35,15 @@ targets_test <- cases_all[samples[[3]], .SD, .SDcols = targets_cols]
 
 rm(cases, events, payments_12m, features_cols, targets_cols, samples, cases_all)
 gc()
+
+## FUnkcja predict dla modelu klasy kmeans:
+
+predict.kmeans <- function(model, newdata) {
+  y <- apply(newdata, 1, function(r) {
+    which.min(colSums((t(model$centers) - r)^2))
+  })
+  return(y)
+}
+
+
+
