@@ -46,5 +46,5 @@
 ## Laboratorium 4
 
 - [Lista zadań - błąd predykcji, zbiory TVT, kroswalidacja, bootstrap](ListaZadan/04_ListaBłądPredykcji.md)
-- [Rozwiązania](ListaZadan/Lab4_rozwiazania.R)
+- [Rozwiązania](ListaZadan/Lab4_rozwiazania.r)
 - [Prezentacja](ListaZadan/Laboratorium4.pdf)
