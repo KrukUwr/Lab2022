@@ -1,7 +1,7 @@
 library(data.table)
 library(caret)
 
-load("../KrukUWr2022.RData")
+load("../../KrukUWr2022.RData")
 
 set.seed(123)
 
