@@ -48,3 +48,7 @@
 - [Lista zadań - błąd predykcji, zbiory TVT, kroswalidacja, bootstrap](ListaZadan/04_ListaBłądPredykcji.md)
 - [Rozwiązania](ListaZadan/Lab4_rozwiazania.r)
 - [Prezentacja](ListaZadan/Laboratorium4.pdf)
+
+## Laboratorium 5
+
+- [Omówienie projektów](ListaZadan/projekty_tablica.pdf)
