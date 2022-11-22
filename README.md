@@ -42,6 +42,7 @@
 ## Laboratorium 3
 
 - [Lista zadań](ListaZadan/Lab3_Zadania.qmd)
+- [Rozwiązania](ListaZadan/Lab3_Rozwiazania/Lab3_Rozwiazania.qmd)
 
 ## Laboratorium 4
 
