@@ -53,3 +53,7 @@
 ## Laboratorium 5
 
 - [Omówienie projektów](ListaZadan/projekty_tablica.pdf)
+
+## Laboratorium 6
+
+- [Lista zadań](ListaZadan/Lab6_Prezentacja)
