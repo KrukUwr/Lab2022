@@ -56,4 +56,4 @@
 
 ## Laboratorium 6
 
-- [Lista zadań](ListaZadan/Lab6_Prezentacja)
+- [Prezentacja](ListaZadan/Lab6_Prezentacja)
