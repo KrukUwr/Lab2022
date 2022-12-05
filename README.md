@@ -64,4 +64,4 @@
 
 ## Laboratorium 8
 
-- [Lista zadań - PCA](ListaZadan/09_ListaPCA.md)
+- [Lista zadań - PCA](ListaZadan/08_ListaPCA.md)
