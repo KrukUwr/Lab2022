@@ -57,3 +57,7 @@
 ## Laboratorium 6
 
 - [Prezentacja](ListaZadan/Lab6_Prezentacja)
+
+## Laboratorium 7
+
+- [Zadania](ListaZadan/Lab7_Zadania)
