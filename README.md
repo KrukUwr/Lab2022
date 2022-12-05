@@ -61,3 +61,7 @@
 ## Laboratorium 7
 
 - [Zadania](ListaZadan/Lab7_Zadania)
+
+## Laboratorium 8
+
+- [Lista zadań - PCA](ListaZadan/09_ListaPCA.md)
