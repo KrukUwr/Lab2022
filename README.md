@@ -57,10 +57,12 @@
 ## Laboratorium 6
 
 - [Prezentacja](ListaZadan/Lab6_Prezentacja)
+- [Rozwiązania](ListaZadan/Lab6_Rozwiazania)
 
 ## Laboratorium 7
 
 - [Zadania](ListaZadan/Lab7_Zadania)
+- [Rozwiązania](ListaZadan/Lab7_Rozwiazania)
 
 ## Laboratorium 8
 
