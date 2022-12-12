@@ -69,3 +69,10 @@
 - [Lista zadań - PCA](ListaZadan/08_ListaPCA.md)
 - [Rozwiązania](ListaZadan/Lab8_rozwiazania.R)
 - [Prezentacja](ListaZadan/08_PrezentacjaPCA.pdf)
+
+## Laboratorium 9
+
+- [Lista zadań - regresja liniowa](ListaZadan/09_ListaRegresjaLiniowa.md)
+
+
+
