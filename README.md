@@ -67,3 +67,5 @@
 ## Laboratorium 8
 
 - [Lista zadań - PCA](ListaZadan/08_ListaPCA.md)
+- [Rozwiązania](ListaZadan/Lab8_rozwiazania.r)
+- [Prezentacja](ListaZadan/08_PrezentacjaPCA.pdf)
