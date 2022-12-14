@@ -76,5 +76,5 @@
 
 ## Laboratorium 9
 
-- [Lista zadań - regresja liniowa](ListaZadan/10_ListaDoborCech.md)
+- [Lista zadań - dobór cech/NN](ListaZadan/10_ListaDoborCech.md)
 - [DeepLearningBooklet](ListaZadan/DeepLearningBooklet.pdf)
