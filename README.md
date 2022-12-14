@@ -74,5 +74,7 @@
 
 - [Lista zadań - regresja liniowa](ListaZadan/09_ListaRegresjaLiniowa.md)
 
+## Laboratorium 9
 
-
+- [Lista zadań - regresja liniowa](ListaZadan/10_ListaDoborCech.md)
+- [DeepLearningBooklet](ListaZadan/DeepLearningBooklet.pdf)
