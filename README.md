@@ -73,6 +73,8 @@
 ## Laboratorium 9
 
 - [Lista zadań - regresja liniowa](ListaZadan/09_ListaRegresjaLiniowa.md)
+- [Rozwiązania](ListaZadan/09_ListaRozwiazania.R)
+- [Prezentacja](ListaZadan/09_PrezentacjaRegresja.pdf)
 
 ## Laboratorium 10
 
