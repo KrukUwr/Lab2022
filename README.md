@@ -79,4 +79,6 @@
 ## Laboratorium 10
 
 - [Lista zadań - dobór cech/NN](ListaZadan/10_ListaDoborCech.md)
+- [Rozwiązania](ListaZadan/10_ListaRozwiazania.r)
+- [Rozwiązania - sieci neuronowe + sztuczne portfele](ListaZadan/10_ListaRozwiazaniaNN.r)
 - [DeepLearningBooklet](ListaZadan/DeepLearningBooklet.pdf)
