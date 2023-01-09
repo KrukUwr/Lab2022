@@ -81,6 +81,6 @@
 - [Lista zadań - dobór cech/NN](ListaZadan/10_ListaDoborCech.md)
 - [Rozwiązania](ListaZadan/10_ListaRozwiazania.r)
 - [Rozwiązania - sieci neuronowe + sztuczne portfele](ListaZadan/10_ListaRozwiazaniaNN.r)
-/oś x - odchylenie modelu per sprawa (MSE), oś y - średnie odchylenie portfela/
 - [Wykres - portele skupione vs szerokie](ListaZadan/wykres.jpg)
+/oś x - odchylenie modelu per sprawa (MSE), oś y - średnie odchylenie portfela/
 - [DeepLearningBooklet](ListaZadan/DeepLearningBooklet.pdf)
