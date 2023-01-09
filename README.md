@@ -84,3 +84,7 @@
 - [Wykres - portele skupione vs szerokie](ListaZadan/wykres.jpg)
 /oś x - odchylenie modelu per sprawa (MSE), oś y - średnie odchylenie portfela/
 - [DeepLearningBooklet](ListaZadan/DeepLearningBooklet.pdf)
+
+## Laboratorium 11
+
+- [Lista zadań - GLM](ListaZadan/11_ListaGLM.md)
