@@ -81,5 +81,5 @@
 - [Lista zadań - dobór cech/NN](ListaZadan/10_ListaDoborCech.md)
 - [Rozwiązania](ListaZadan/10_ListaRozwiazania.r)
 - [Rozwiązania - sieci neuronowe + sztuczne portfele](ListaZadan/10_ListaRozwiazaniaNN.r)
-- [Wykres - portele skupione vs szerokie](ListaZadan/wykres.jpeg)
+- [Wykres - portele skupione vs szerokie](ListaZadan/wykres.jpg)
 - [DeepLearningBooklet](ListaZadan/DeepLearningBooklet.pdf)
