@@ -87,4 +87,4 @@
 
 ## Laboratorium 11
 
-- [Lista zadań - GLM](ListaZadan/11_ListaGLM.md)
+- [Lista zadań - GLM, IV, WoE, nieliniowość](ListaZadan/11_ListaGLM.md)
